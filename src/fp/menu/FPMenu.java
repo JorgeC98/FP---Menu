@@ -17,7 +17,38 @@ public class FPMenu {
     public static void main(String[] args) {
         System.out.println("La opción elegida es:"+menu());
         // TODO code application logic here
+        
+        //forma 1 
+        /*
+        int m;
+        float a;
+        m=menu();
+        a=calculaAreas(m);
+        muestraResultado(a,m);
+        */
+        
+        //forma 2
+        muestraResultado(calculaAreas(menu()));
     }
+    
+     public static void muestraResultado(float area){
+         System.out.println("el area es" + area);
+     }
+    
+    /*
+     public static void muestraResultado(float area, int r){
+        String figura;
+        if (r == 1)  {figura="cudrado";} 
+        else{
+            if (r == 1)  {figura="circulo";} 
+            else{
+                figura = "triangulo";}
+    
+       
+        System.out.println("el area del " + figura + "es igual a:" + area);
+    }
+    */
+    
     public static int menu (){
         int opcion;
         do{
@@ -51,9 +82,13 @@ public class FPMenu {
                 break;
             default:
                 mensajeSalida();
+                area=0
         }
     
         return area;
     }
+    public static float areaCuadrado()(return(float)1.000);
+     public static float areaCirculo()(return(float)1.000);
+      public static float areaTriangulo()(return(float)1.000);
 }
 
